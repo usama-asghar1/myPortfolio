@@ -1,6 +1,6 @@
 import '../styles/globals.css'
 import { Inter } from 'next/font/google'
-import Header from '../components/header'
+
 import Navbar from '../components/navbar'
 // import { ThemeProvider } from "next-themes"
 
@@ -19,6 +19,7 @@ export default function RootLayout({ children }) {
         {/* <ThemeProvider enableSystem={true} attribute="class"> */}
           <Navbar />
           {children}
+          
      
         {/* </ThemeProvider> */}
       </body>

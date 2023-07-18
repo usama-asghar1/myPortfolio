@@ -14,3 +14,12 @@ body {
     color: #ffffff;
   }
   
+.dark h1,
+.dark p,
+.dark .text-white {
+  color: #ffffff;
+}
+
+#skillsText {
+  color: #1f1f1f;
+}

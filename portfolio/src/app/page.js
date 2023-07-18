@@ -1,9 +1,12 @@
-// import Image from 'next/image'
-
+import MainContent from "@/components/MainContent"
+import About from "@/components/About"
+ 
 export default function Home() {
   return (
-   <div>
-      <h1>hello hi</h1>
-   </div>   
+    <main className="mx-auto max-w-3xl px-4 sm:px-6 md:max-w-5xl ">
+    <MainContent />
+    <About />
+
+   </main>   
   )
 }

@@ -1,3 +1,7 @@
+
+// add see through navbar using useScroll hook
+
+
 "use client"
 import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
