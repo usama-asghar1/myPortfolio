@@ -19,6 +19,14 @@ const projects = [
     github: "https://github.com/usama-asghar1/BootcampersSurvivalGuide",
     link: "https://bootcampers-survival-guide.netlify.app",
   },
+  {
+    name: "My Portfolio",
+    description: "My portfolio website created with Next v13 and Tailwind CSS.",
+    image: "/platoio.png",
+    github: "https://github.com/usama-asghar1/myPortfolio",
+    link: "https://usama-asghar.netlify.app/",
+  },
+
 ]
 
 const Projects = () => {
