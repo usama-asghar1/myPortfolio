@@ -42,7 +42,7 @@ const About = () => {
             </p>
             <br />
             <p>
-              I graduated with 2:1 in BSc Chemistry from Queen Mary's, University of London. After graduating and experiencing modules in programming,
+              I graduated with 2:1 in BSc Chemistry from Queen Mary&#39;s, University of London. After graduating and experiencing modules in programming,
              I found my true passion of coding then decided to pursue this passion with the School of Code, 
              an intensive full-time bootcamp that enabled me to learn Full stack development. 
             </p>
