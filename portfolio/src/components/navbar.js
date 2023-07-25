@@ -4,22 +4,26 @@
 
 "use client"
 import { useState, useEffect } from "react";
-import { Link } from "react-scroll";
+import NextLink from "next/link"
+import { Link as ScrollLink} from "react-scroll";
 import { RiMoonFill, RiSunLine } from "react-icons/ri";
 import { IoMdMenu, IoMdClose } from "react-icons/io"
 
 const NAV_ITEMS = [
   {
     label: "Home",
-    page: "home",
+    path: "/",
+    section: "home",
   },
   {
     label: "About",
-    page: "about",
+    path: "/",
+    section: "about",
   },
   {
     label: "Projects",
-    page: "projects",
+    path: "/",
+    section: "projects",
   },
 ];
 
@@ -53,11 +57,11 @@ export default function Navbar() {
     <div className="justify-between md:items-center md:flex">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
-            <Link to="home">
+            <NextLink href="/">
               <div className="container flex items-center space-x-2">
                 <h2 className={`text-2xl font-bold ${darkMode ? "text-white" : "text-black"}`}>Usama Asghar</h2>
               </div>
-            </Link>
+            </NextLink>
             <div className="md:hidden">
               <button
                 className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
@@ -76,9 +80,10 @@ export default function Navbar() {
             }`} >
             <div className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
               {NAV_ITEMS.map((item, idx) => (
-                <Link
+                <ScrollLink
                   key={idx}
-                  to={item.page}
+                  href={item.path}
+                  to={item.section}
                   className={`block lg:inline-block ${darkMode ? "text-white" : "text-black"} hover:text-neutral-500 dark:text-neutral-100`}
                   activeClass="active"
                   spy={true}
@@ -88,7 +93,7 @@ export default function Navbar() {
                   onClick={() => setNavbar(!navbar)}
                 >
                   {item.label}
-                </Link>
+                </ScrollLink>
               ))}
               <button
                 onClick={toggleDarkMode}

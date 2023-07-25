@@ -1,9 +1,19 @@
 'use client'
+
+
+
 export default function Ecokitchen() {
     return (
+        <main className="animate-fadeIn animation-delay-2">
+        
+        <div className="my-12 pb-12 md:pt-16 md:pb-48">
+        <h1 className="text-center font-bold text-4xl">
+         Eco Kitchen
+          <hr className="w-6 h-1 mx-auto my-4 bg-teal-500 border-0 rounded"></hr>
+        </h1>
+       </div> 
+
         <div>
-            <h1>Ecokitchen</h1>
-            <br></br>
             <h2>Overview yhhhy hyhhhhhy </h2>
             <br>
             </br>
@@ -33,6 +43,6 @@ export default function Ecokitchen() {
 
 
         </div>
-
+</main>
     )
 }
