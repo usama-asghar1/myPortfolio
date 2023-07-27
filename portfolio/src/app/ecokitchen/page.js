@@ -1,9 +1,13 @@
 'use client'
 
+import Navbar from '../../components/navbarNext'
 
 
 export default function Ecokitchen() {
     return (
+        <>
+        
+        <Navbar/>
         <main className="animate-fadeIn animation-delay-2">
         
         <div className="my-12 pb-12 md:pt-16 md:pb-48">
@@ -44,5 +48,7 @@ export default function Ecokitchen() {
 
         </div>
 </main>
+</>
+
     )
 }

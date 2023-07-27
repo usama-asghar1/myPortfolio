@@ -62,8 +62,8 @@ const Projects = () => {
                     <p className="text-xl leading-7 mb-4 text-neutral-600 dark:text-neutral-400">
                       {project.description}
                     </p>
-                    <Link href={project.page}><p  className="text-teal-600 font-semibold underline hover:no-underline cursor-pointer">Click for More Info</p></Link>
-                    <br></br>
+                    {/* <Link href={project.page}><p  className="text-teal-600 font-semibold underline hover:no-underline cursor-pointer">Click for More Info</p></Link>
+                    <br></br> */}
                     <div className="flex flex-row align-bottom space-x-4">
                       <Link href={project.github} target="_blank" className="text-teal-600">
                         <BsGithub

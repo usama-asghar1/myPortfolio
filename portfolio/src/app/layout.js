@@ -1,7 +1,8 @@
 import '../styles/globals.css'
 import { Inter } from 'next/font/google'
+// import { ThemeProvider } from 'next-themes'
 
-import Navbar from '../components/navbar'
+
 import Footer from '../components/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -17,7 +18,7 @@ export default function RootLayout({ children }) {
       
       <body className="dark:bg-stone-900">
         {/* <ThemeProvider enableSystem={true} attribute="class"> */}
-          <Navbar />
+        
           {children}
           <Footer />
      
