@@ -2,24 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Default styles for light mode */
+
 body {
-    background-color: #ffffff;
-    color: #333333;
-  }
+  background-color: #ffffff;
+  color: #333333;
+ }
   
-  /* Styles for dark mode */
-  .dark {
-    background-color: #1f1f1f;
-    color: #ffffff;
-  }
+.dark {
+  background-color: #1C1917;
+  color: #ffffff;
+ }
   
 .dark h1,
 .dark p,
 .dark .text-white {
   color: #ffffff;
 }
-
 
 #skillsText {
   color: #1f1f1f;

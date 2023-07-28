@@ -11,19 +11,9 @@ import { IoMdMenu, IoMdClose } from "react-icons/io"
 
 const NAV_ITEMS = [
   {
-    label: "Home",
+    label: "Back to Home",
     path: "/",
     section: "home",
-  },
-  {
-    label: "About",
-    path: "/",
-    section: "about",
-  },
-  {
-    label: "Projects",
-    path: "/",
-    section: "projects",
   },
 ];
 
@@ -83,13 +73,9 @@ export default function Navbar() {
                 <NextLink
                   key={idx}
                   href={item.path}
-                  to={item.section}
+                  
                   className={`block lg:inline-block ${darkMode ? "text-white" : "text-black"} hover:text-neutral-500 dark:text-neutral-100`}
-                  activeClass="active"
-                  spy={true}
-                  smooth={true}
-                  offset={-100}
-                  duration={500}
+                 
                   onClick={() => setNavbar(!navbar)}
                 >
                   {item.label}

@@ -19,7 +19,7 @@ const projects = [
     image: "/bootcamperssurvivalguide.png",
     github: "https://github.com/usama-asghar1/BootcampersSurvivalGuide",
     link: "https://bootcampers-survival-guide.netlify.app",
-    page: "/bootcamperssurvivalguide",
+    
   },
   {
     name: "My Portfolio",
@@ -27,9 +27,15 @@ const projects = [
     image: "/portfolio.png",
     github: "https://github.com/usama-asghar1/myPortfolio",
     link: "https://usama-asghar.netlify.app/",
-    page: "/myportfolio",
+    
   },
+  {
+    name: "Recipe Library",
+    description: "A full-stack app that allows users to create their own recipes, read them and delete them.",
+    image: "/recipelibrary.png",
+    github: "https://github.com/usama-asghar1/recipelibrary",
 
+  },
 ]
 
 const Projects = () => {
@@ -47,23 +53,43 @@ const Projects = () => {
             <div key={idx}>
                 <div className="flex flex-col md:flex-row md:space-x-12">
                   <div className=" md:w-1/2">
-                    <Link href={project.link}>
-                      <Image
-                        src={project.image}
-                        alt=""
-                        width={1000}
-                        height={1000}
-                        className="rounded-xl shadow-xl hover:opacity-70"
-                      />
-                    </Link>
+                  <div>
+      {project.link ? (
+        <Link href={project.link}>
+          <Image
+            src={project.image}
+            alt=""
+            width={1000}
+            height={1000}
+            className="rounded-xl shadow-xl hover:opacity-70"
+          />
+        </Link>
+      ) :  <Image
+            src={project.image}
+            alt=""
+            width={1000}
+            height={1000}
+            className="rounded-xl shadow-xl"
+          />}
+     
+    </div>
                   </div>
                   <div className="mt-8 md:w-1/2">
                     <h1 className="text-4xl font-bold mb-6">{project.name}</h1>
                     <p className="text-xl leading-7 mb-4 text-neutral-600 dark:text-neutral-400">
                       {project.description}
                     </p>
-                    {/* <Link href={project.page}><p  className="text-teal-600 font-semibold underline hover:no-underline cursor-pointer">Click for More Info</p></Link>
-                    <br></br> */}
+                    <div>
+      {project.page ? (
+        <Link href={project.page}>
+          <p className="text-teal-600 font-semibold underline hover:no-underline cursor-pointer">
+            Click for More Info
+          </p>
+        </Link>
+      ) : null}
+      <br />
+     
+    </div>
                     <div className="flex flex-row align-bottom space-x-4">
                       <Link href={project.github} target="_blank" className="text-teal-600">
                         <BsGithub
@@ -71,12 +97,17 @@ const Projects = () => {
                           className="hover:-translate-y-1 transition-transform cursor-pointer "
                         />
                       </Link>
-                      <Link href={project.link} target="_blank" className="text-teal-600">
-                        <BsArrowUpRightSquare
-                          size={30}
-                          className="hover:-translate-y-1 transition-transform cursor-pointer"
-                        />
-                      </Link>
+                   <div>
+      {project.link ? (
+        <Link href={project.link} target="_blank" className="text-teal-600">
+          <BsArrowUpRightSquare
+            size={30}
+            className="hover:-translate-y-1 transition-transform cursor-pointer"
+          />
+        </Link>
+      ) : null}
+   
+    </div>
                     </div>
                   </div>
                 </div>
