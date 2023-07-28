@@ -36,6 +36,13 @@ const projects = [
     github: "https://github.com/usama-asghar1/recipelibrary",
 
   },
+  {
+    name: "Weather App",
+    description: "A very basic weather app that allows users to search for a city and get the current weather, created in TypeScript.",
+    image: "/weatherapp.png",
+    github: "https://github.com/usama-asghar1/weatherapp",
+
+  },
 ]
 
 const Projects = () => {
