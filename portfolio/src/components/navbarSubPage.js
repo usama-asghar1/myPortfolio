@@ -1,7 +1,5 @@
 
 // add see through navbar using useScroll hook
-
-
 "use client"
 import { useState, useEffect } from "react";
 import NextLink from "next/link"
@@ -9,15 +7,8 @@ import NextLink from "next/link"
 import { RiMoonFill, RiSunLine } from "react-icons/ri";
 import { IoMdMenu, IoMdClose } from "react-icons/io"
 
-const NAV_ITEMS = [
-  {
-    label: "Back to Home",
-    path: "/",
-    section: "home",
-  },
-];
 
-export default function Navbar() {
+export default function NavbarSubPage() {
   const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
@@ -48,9 +39,7 @@ export default function Navbar() {
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <NextLink href="/">
-              <div className="container flex items-center space-x-2">
-                <h2 className={`text-2xl font-bold ${darkMode ? "text-white" : "text-black"}`}>Usama Asghar</h2>
-              </div>
+              <button className="text-neutral-100 font-semibold px-6 py-3 bg-teal-600 rounded shadow hover:bg-teal-700">Back to Home</button>
             </NextLink>
             <div className="md:hidden">
               <button
@@ -69,18 +58,7 @@ export default function Navbar() {
               navbar ? "block" : "hidden"
             }`} >
             <div className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-              {NAV_ITEMS.map((item, idx) => (
-                <NextLink
-                  key={idx}
-                  href={item.path}
-                  
-                  className={`block lg:inline-block ${darkMode ? "text-white" : "text-black"} hover:text-neutral-500 dark:text-neutral-100`}
-                 
-                  onClick={() => setNavbar(!navbar)}
-                >
-                  {item.label}
-                </NextLink>
-              ))}
+    
               <button
                 onClick={toggleDarkMode}
                 className="bg-slate-100 p-2 rounded-xl"

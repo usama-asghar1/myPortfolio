@@ -1,13 +1,13 @@
 'use client'
 
-import Navbar from '../../components/navbarNext'
+import NavbarSubPage from '../../components/navbarSubPage'
 
 
 export default function Ecokitchen() {
     return (
         <>
         
-        <Navbar/>
+        <NavbarSubPage/>
         <main className="animate-fadeIn animation-delay-2">
         
         <div className="my-12 pb-12 pt-20 md:pt-16 md:pb-30">
@@ -20,7 +20,7 @@ export default function Ecokitchen() {
       
       <h1 className="text-center font-bold text-3xl">Tech Stack</h1>
         
-  
+      <p>
        <div className="flex flex-row justify-center">
         <div className="md:w-1/2 p-4 md:p-0 flex flex-col items-center justify-center text-[2vmax] md:text-[1vmax]">
         <table className="w-full table-fixed border">
@@ -77,8 +77,10 @@ export default function Ecokitchen() {
         </tr>
       </tbody>
     </table>
+   
                 </div>
                 </div>
+                </p>
   
     
 </main>
