@@ -1,6 +1,19 @@
 'use client'
 
 import NavbarSubPage from '../../components/navbarSubPage'
+import Link from 'next/link'
+import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs"
+
+const project = 
+  {
+    name: "Eco Kitchen",
+    description:
+      "A full-stack mobile app aimed to help users with their food consumption, reduce waste and cut costs.",
+    image: "/ecokitchen.png",
+    github: "https://github.com/usama-asghar1/EcoKitchen",
+    link: "https://eco-kitchen.netlify.app/",
+    page: "/ecokitchen",    
+  }
 
 
 export default function Ecokitchen() {
@@ -11,14 +24,38 @@ export default function Ecokitchen() {
         <main className="animate-fadeIn animation-delay-2">
         
         <div className="my-12 pb-12 pt-20 md:pt-16 md:pb-30">
-        <h1 className="text-center font-bold text-4xl">
-         Eco Kitchen
-          <hr className="w-6 h-1 mx-auto my-4 bg-teal-500 border-0 rounded"></hr>
+
+        <h1 className="text-center font-bold text-4xl"> 
+        Eco Kitchen
+          <hr className="w-6 h-1 mx-auto my-4 bg-teal-500 border-0 rounded" />
+           <div className="flex flex-row justify-center space-x-4">
+
+             <Link href={project.github} target="_blank" className="text-teal-600">
+                <BsGithub  size={30}  className="hover:-translate-y-1 transition-transform cursor-pointer"   />
+             </Link>
+             <Link href={project.link} target="_blank" className="text-teal-600">
+                <BsArrowUpRightSquare   size={30}   className="hover:-translate-y-1 transition-transform cursor-pointer"  />
+             </Link> 
+              
+          </div>
         </h1>
-       </div> 
+
 
       
-      <h1 className="text-center font-bold text-3xl">Tech Stack</h1>
+        
+          
+       
+        <div className="text-center">
+      <h1 className="text-2xl font-bold mb-6 mt-8">Quick Demo</h1>
+      <div className="max-w-lg mx-auto mt-4 mb-8">
+        <video controls className="w-full">
+          <source src="/EcoKitchenDemo.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+      
+      <h1 className="text-center font-bold text-2xl mt-6 mb-8">Tech Stack</h1>
         
       <p>
        <div className="flex flex-row justify-center">
@@ -82,7 +119,7 @@ export default function Ecokitchen() {
                 </div>
                 </p>
   
-    
+                </div> 
 </main>
 </>
 
