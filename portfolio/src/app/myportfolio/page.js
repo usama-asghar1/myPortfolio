@@ -56,9 +56,7 @@ export default function Ecokitchen() {
         <tr>
           <td className="border">Next.js</td>
           <td className="w-2/5 border">I used Next.js to reduce latency and increase performance. After learning React, this 
-          felt like a natural progression, dynamic routing and server-side rendering are some of the features that I used.
-          
-          </td>
+          felt like a natural progression, dynamic routing and server-side rendering are some of the features that I used.  </td>
         </tr>
         <tr>
           <td className="border">Tailwind CSS</td>
