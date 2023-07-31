@@ -26,7 +26,7 @@ export default function Ecokitchen() {
         <div className="my-12 pb-12 pt-20 md:pt-16 md:pb-30">
 
         <h1 className="text-center font-bold text-4xl"> 
-        Eco Kitchen
+        {project.name}
           <hr className="w-6 h-1 mx-auto my-4 bg-teal-500 border-0 rounded" />
            <div className="flex flex-row justify-center space-x-4">
 
@@ -39,18 +39,29 @@ export default function Ecokitchen() {
               
           </div>
         </h1>
-
-
-      
-        
-          
        
         <div className="text-center">
       <h1 className="text-2xl font-bold mb-6 mt-8">Quick Demo</h1>
+      <p className="mb-8">
+        This is a short demo of the app that only shows a few features.
+       <br />
+        Check out the full app to see all the features in action!
+      </p>
       <div className="max-w-lg mx-auto mt-4 mb-8">
         <video controls className="w-full">
           <source src="/EcoKitchenDemo.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>  
+
+    <div className="text-center">
+      <h1 className="text-2xl font-bold mb-6 mt-8">Full Presentation</h1>
+      <p className="mb-8">
+        This is a full presentation of the app by the team console.loggers().
+      </p>
+      <div className="max-w-lg mx-auto mt-4 mb-8">
+        <video controls className="w-full">
+          <source src="/finalPresentation.mp4" type="video/mp4" />
         </video>
       </div>
     </div>
@@ -58,7 +69,7 @@ export default function Ecokitchen() {
       <h1 className="text-center font-bold text-2xl mt-6 mb-8">Tech Stack</h1>
         
       <p>
-       <div className="flex flex-row justify-center">
+       <div className="flex flex-row justify-center text-center">
         <div className="md:w-1/2 p-4 md:p-0 flex flex-col items-center justify-center text-[2vmax] md:text-[1vmax]">
         <table className="w-full table-fixed border">
       <thead>

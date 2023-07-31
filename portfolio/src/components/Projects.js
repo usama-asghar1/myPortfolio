@@ -27,7 +27,7 @@ const projects = [
     image: "/portfolio.png",
     github: "https://github.com/usama-asghar1/myPortfolio",
     link: "https://usama-asghar.netlify.app/",
-    
+    page: "/myportfolio",    
   },
   {
     name: "Recipe Library",
