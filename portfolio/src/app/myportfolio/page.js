@@ -14,7 +14,6 @@ const project =
     
   }
 
-
 export default function Ecokitchen() {
     return (
         <>

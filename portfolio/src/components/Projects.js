@@ -19,6 +19,7 @@ const projects = [
     image: "/bootcamperssurvivalguide.png",
     github: "https://github.com/usama-asghar1/BootcampersSurvivalGuide",
     link: "https://bootcampers-survival-guide.netlify.app",
+    page: "/bootcamperssurvivalguide",
     
   },
   {

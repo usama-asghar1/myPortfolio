@@ -22,3 +22,17 @@ body {
 #skillsText {
   color: #1f1f1f;
 }
+
+.slick-dots li button:before {
+  color: rgb(120, 120, 120) !important;
+  font-size: 10px !important;
+  margin-top: 10px;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #14B8A6  !important;
+}
+
+.slick-prev:before, .slick-next:before {
+  color: #14B8A6  !important;
+}
