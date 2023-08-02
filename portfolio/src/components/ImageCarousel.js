@@ -62,9 +62,9 @@ function NextArrow(props) {
         <div className="w-1/2">
           <Slider {...settings}>
             {images.map((imageInfo, index) => (
-              <div key={index} className="text-center" onClick={() => enlargeImage(imageInfo.url)}>
+              <div key={index} className="text-center">
                 <h1 className="text-center font-bold text-2xl mb-4">{imageInfo.alt}</h1>
-                <img src={imageInfo.url} alt={imageInfo.alt} className='shadow-xl' />
+                <img src={imageInfo.url} alt={imageInfo.alt} className='shadow-xl' onClick={() => enlargeImage(imageInfo.url)} />
               </div>
             ))}
           </Slider>
