@@ -22,6 +22,17 @@ const projects = [
     page: "/bootcamperssurvivalguide",
     
   },
+
+  {
+    name: "Pool Scoreboard",
+    description: "A full stack app to help me and my friends play 8 ball pool and track the scores in a table format.",
+    image: "/pool.png",
+    github: "https://github.com/usama-asghar1/PoolScoreboard.git",
+    link: "https://cottagepool.netlify.app/",
+    // page: "/pool",
+
+  },
+
   {
     name: "My Portfolio",
     description: "My portfolio website created with Next v13 and Tailwind CSS.",
@@ -98,25 +109,17 @@ const Projects = () => {
       <br />
      
     </div>
-                    <div className="flex flex-row align-bottom space-x-4">
-                      <Link href={project.github} target="_blank" className="text-teal-600">
-                        <BsGithub
-                          size={30}
-                          className="hover:-translate-y-1 transition-transform cursor-pointer "
-                        />
-                      </Link>
-                   <div>
-      {project.link ? (
-        <Link href={project.link} target="_blank" className="text-teal-600">
-          <BsArrowUpRightSquare
-            size={30}
-            className="hover:-translate-y-1 transition-transform cursor-pointer"
-          />
-        </Link>
-      ) : null}
-   
-    </div>
-                    </div>
+    <div className="flex space-x-4">
+  <Link href={project.github} target="_blank" className="flex flex-row items-center text-teal-600 hover:-translate-y-1 transition-transform cursor-pointer">
+    <BsGithub size={30} className="mr-1" /> GitHub
+  </Link>
+  {project.link && (
+    <Link href={project.link} target="_blank" className="flex flex-row items-center text-teal-600 hover:-translate-y-1 transition-transform cursor-pointer">
+      <BsArrowUpRightSquare size={30} className="mr-1" /> Live App
+    </Link>
+  )}
+</div>
+
                   </div>
                 </div>
             </div>
