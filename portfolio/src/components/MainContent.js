@@ -22,7 +22,7 @@ const MainContent = () => {
           <p className="text-lg mt-4 mb-6 md:text-2xl">
             I&#39;m a{" "}
             <span className="font-semibold text-teal-600">
-              Junior Software Developer{" "}
+              Full-Stack Software Engineer{" "}
             </span>
             based in London. Looking to land my first role in the industry.
           </p>

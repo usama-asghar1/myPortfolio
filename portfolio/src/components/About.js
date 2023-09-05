@@ -38,14 +38,14 @@ const About = () => {
               Hi, my name is Usama and I am a{" "}
               <span className="font-bold">{"highly ambitious"}</span>,
               <span className="font-bold">{" self-motivated"}</span>, and
-              <span className="font-bold">{" driven"}</span> software developer
+              <span className="font-bold">{" driven"}</span> Full-Stack Software Engineer
               based in London.
             </p>
             <br />
             <p>
               I graduated with 2:1 in BSc Chemistry from Queen Mary&#39;s, University of London. After graduating and experiencing modules in programming,
              I found my true passion of coding then decided to pursue this passion with the School of Code, 
-             an intensive full-time bootcamp that enabled me to learn Full stack development. 
+             an intensive full-time bootcamp that enabled me to learn Full-Stack development. 
             </p>
             <br />
             <p>
