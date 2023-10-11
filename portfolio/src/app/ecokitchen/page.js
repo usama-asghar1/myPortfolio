@@ -28,18 +28,27 @@ export default function Ecokitchen() {
         <h1 className="text-center font-bold text-4xl"> 
         {project.name}
           <hr className="w-6 h-1 mx-auto my-4 bg-teal-500 border-0 rounded" />
+          </h1>
            <div className="flex flex-row justify-center space-x-4">
 
-             <Link href={project.github} target="_blank" className="text-teal-600">
-                <BsGithub  size={30}  className="hover:-translate-y-1 transition-transform cursor-pointer"   />
-             </Link>
-             <Link href={project.link} target="_blank" className="text-teal-600">
-                <BsArrowUpRightSquare   size={30}   className="hover:-translate-y-1 transition-transform cursor-pointer"  />
-             </Link> 
+           <Link href={project.github} target="_blank" className="flex flex-row items-center text-teal-600 hover:-translate-y-1 transition-transform cursor-pointer">
+    <BsGithub size={30} className="mr-1" /> GitHub
+  </Link>
+  <Link href={project.link} target="_blank" className="flex flex-row items-center text-teal-600 hover:-translate-y-1 transition-transform cursor-pointer">
+      <BsArrowUpRightSquare size={30} className="mr-1" /> Live App
+    </Link>
               
           </div>
-        </h1>
+
+          <div className="text-center">
+          <p className="mb-8 mt-8">
+          A one-stop app that lets you add items to your virtual kitchen, discover new recipes, <br />
+          track expiry dates or manage your shopping list. <br /> Created in an agile team of 6 called console.loggers() and planned, <br />  
+          prepared and presented to industry professionals in 5 weeks.
+          </p>
+          </div>
        
+
         <div className="text-center">
       <h1 className="text-2xl font-bold mb-6 mt-8">Quick Demo</h1>
       <p className="mb-8">

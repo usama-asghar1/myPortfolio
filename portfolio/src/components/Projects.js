@@ -29,7 +29,7 @@ const projects = [
     image: "/pool.png",
     github: "https://github.com/usama-asghar1/PoolScoreboard.git",
     link: "https://cottagepool.netlify.app/",
-    // page: "/pool",
+    page: "/pool",
 
   },
 
@@ -43,18 +43,18 @@ const projects = [
   },
   {
     name: "Recipe Library",
-    description: "A full-stack app that allows users to create their own recipes, read them and delete them.",
+    description: "A full-stack app that allows users to create their own recipes, read them and delete them using Node.",
     image: "/recipelibrary.png",
     github: "https://github.com/usama-asghar1/recipelibrary",
 
   },
-  {
-    name: "Weather App",
-    description: "A very basic weather app that allows users to search for a city and get the current weather, created in TypeScript.",
-    image: "/weatherapp.png",
-    github: "https://github.com/usama-asghar1/weatherapp",
+  // {
+  //   name: "Weather App",
+  //   description: "A very basic weather app that allows users to search for a city and get the current weather, created in TypeScript.",
+  //   image: "/weatherapp.png",
+  //   github: "https://github.com/usama-asghar1/weatherapp",
 
-  },
+  // },
 ]
 
 const Projects = () => {
