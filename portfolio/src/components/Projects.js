@@ -1,7 +1,9 @@
+"use client"
 import React from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs"
+import { useState } from "react";
 
 const projects = [
   {
@@ -12,6 +14,7 @@ const projects = [
     github: "https://github.com/usama-asghar1/EcoKitchen",
     link: "https://eco-kitchen.netlify.app/",
     page: "/ecokitchen",    
+    group: true,
   },
   {
     name: "Bootcampers Survival Guide",
@@ -20,7 +23,7 @@ const projects = [
     github: "https://github.com/usama-asghar1/BootcampersSurvivalGuide",
     link: "https://bootcampers-survival-guide.netlify.app",
     page: "/bootcamperssurvivalguide",
-    
+    group: true,    
   },
 
   {
@@ -30,7 +33,7 @@ const projects = [
     github: "https://github.com/usama-asghar1/PoolScoreboard.git",
     link: "https://cottagepool.netlify.app/",
     page: "/pool",
-
+    group: false,
   },
 
   {
@@ -40,13 +43,14 @@ const projects = [
     github: "https://github.com/usama-asghar1/myPortfolio",
     link: "https://usama-asghar.netlify.app/",
     page: "/myportfolio",    
+    group: false,
   },
   {
     name: "Recipe Library",
     description: "A full-stack app that allows users to create their own recipes, read them and delete them using Node.",
     image: "/recipelibrary.png",
     github: "https://github.com/usama-asghar1/recipelibrary",
-
+    group: false,
   },
   // {
   //   name: "Weather App",
@@ -58,6 +62,23 @@ const projects = [
 ]
 
 const Projects = () => {
+
+  const [filter, setFilter] = useState("all");
+
+  const handleFilterChange = (event) => {
+    setFilter(event.target.value);
+  };
+
+  const filteredProjects = projects.filter((project) => {
+    if (filter === "all") {
+      return true; 
+    } else if (filter === "solo") {
+      return !project.group; 
+    } else if (filter === "group") {
+      return project.group; 
+    }
+  });
+
   return (
     <section id="projects">
   
@@ -66,8 +87,21 @@ const Projects = () => {
         <hr className="w-6 h-1 mx-auto my-4 bg-teal-500 border-0 rounded"></hr>
       </h1>
 
+      <div className="my-4">
+        <label className="mr-2">Filter Projects:</label>
+        <select
+          value={filter}
+          onChange={handleFilterChange}
+          className="border rounded p-2"
+        >
+          <option value="all">All</option>
+          <option value="solo">Solo</option>
+          <option value="group">Group</option>
+        </select>
+      </div>
+
       <div className="flex flex-col space-y-28">
-        {projects.map((project, idx) => {
+        {filteredProjects.map((project, idx) => {
           return (
             <div key={idx}>
                 <div className="flex flex-col md:flex-row md:space-x-12">
