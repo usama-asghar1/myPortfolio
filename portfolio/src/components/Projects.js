@@ -8,13 +8,19 @@ import { useState } from "react";
 const projects = [
   {
     name: "Eco Kitchen",
-    description:
-      "A full-stack mobile app aimed to help users with their food consumption, reduce waste and cut costs.",
+    description: "A full-stack mobile app aimed to help users with their food consumption, reduce waste and cut costs.",
     image: "/ecokitchen.png",
     github: "https://github.com/usama-asghar1/EcoKitchen",
     link: "https://eco-kitchen.netlify.app/",
     page: "/ecokitchen",    
     group: true,
+  },
+  {
+    name: "Pokemon Deck",
+    description: "IN PROGRESS: A full-stack app that allows users to create their own Pokemon decks, and sort, filter and delete them.",
+    image: "/inProgress.jpg",
+    github: "https://github.com/usama-asghar1/PokemonDeck",  
+    group: false,
   },
   {
     name: "Bootcampers Survival Guide",
