@@ -20,6 +20,7 @@ const projects = [
     description: "IN PROGRESS: A full-stack app that allows users to create their own Pokemon decks, and sort, filter and delete them.",
     image: "/inProgress.jpg",
     github: "https://github.com/usama-asghar1/PokemonDeck",  
+    link: "https://pokemondeck-usama.netlify.app/",
     group: false,
   },
   {
