@@ -15,6 +15,7 @@ body {
   
 .dark h1,
 .dark p,
+.dark label,
 .dark .text-white {
   color: #ffffff;
 }
